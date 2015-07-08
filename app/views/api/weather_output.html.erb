@@ -1,4 +1,10 @@
 <h1>
   <img src="http://openweathermap.org/img/w/<%= @icon %>.png" alt="weather icon">
   <%= @result %>
+
+  <div>
+    The wind is blowing at <%= @wind_speed %> m/s from <%= @wind_dir %> deg
+  </div>
+
+  <div>The current temperature is <%= @current_temp_farenheit.round %> degrees</div>
 </h1>
